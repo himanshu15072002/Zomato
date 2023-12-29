@@ -1,0 +1,25 @@
+<!-- <p>register works!</p> -->
+
+<div class="container mt-3">
+    <form>
+      <div class="row">
+        <div class="col-6">
+            <label for="">Email</label>
+          <input type="text" class="form-control" placeholder="Enter email" [(ngModel)]="registerObj.emailId"  name="email">
+        </div>
+        <div class="col-6">
+            <label for="">mobileNo</label>
+          <input type="password" class="form-control" placeholder="Mobile no"[(ngModel)]="registerObj.mobileNo"  name="mobile">
+        </div>
+        <div class="col-6">
+            <label for="">User Name </label>
+            <input type="password" class="form-control" placeholder="User Name"[(ngModel)]="registerObj.userName" name="pswd">
+          </div>
+          <div class="col-6">
+            <label for=""> Password</label>
+            <input type="password" class="form-control" placeholder="Enter password" [(ngModel)]="registerObj.password" name="pswd">
+          </div>
+      </div>
+      <button class="" (click)="onSave()">Register</button>
+    </form>
+  </div>
